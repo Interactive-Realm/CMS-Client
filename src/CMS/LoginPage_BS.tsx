@@ -1,11 +1,9 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Form } from 'react-bootstrap';
 import RealmLogo from './Assets/RealmLogo.png';
 import Image from 'react-bootstrap/Image';
-import { useState, useEffect } from 'react';
-import { Client, CMS } from '@interactive-realm/databaseutilities';
+import { useState } from 'react';
+import { CMS } from '@interactive-realm/databaseutilities';
 import Button from 'react-bootstrap/Button';
 
 // Login Page
@@ -13,7 +11,6 @@ const CMSLoginPage = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState<string | null>(null);
 
     const handleSubmit = async () => {
         //if (error) setError(error.message);

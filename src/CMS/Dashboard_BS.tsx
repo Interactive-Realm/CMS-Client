@@ -1,4 +1,4 @@
-import {  Container, Nav, Row, Col, ListGroup, Button, Tabs, Tab, Navbar } from 'react-bootstrap';
+import {  Container, Nav, Row, Col, ListGroup, Button, Tabs, Tab} from 'react-bootstrap';
 import NavBar from "./Components/NavBar_BS";
 import Traffic_Page from './Dashboard_Pages/Traffic_Page';
 import Demographics_Page from './Dashboard_Pages/Demographics_Page';

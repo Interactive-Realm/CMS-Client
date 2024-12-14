@@ -1,4 +1,4 @@
-import {  Row, Col, Badge, Dropdown, ListGroup, Card, Table, Stack, Pagination  } from 'react-bootstrap';
+import {  Row,  Badge, Dropdown, Card, Table, Stack, Pagination  } from 'react-bootstrap';
 
 const UserDetails_Page = () => {
     return (

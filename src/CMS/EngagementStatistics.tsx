@@ -1,4 +1,3 @@
-import React from "react";
 import Graph_Placeholder from './Assets/Group 31.png'
 import { Image } from "react-bootstrap";
 
