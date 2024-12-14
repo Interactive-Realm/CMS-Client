@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config vite/config.dev.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -15,12 +15,15 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@interactive-realm/basepatternutilities": "^0.5.0",
     "@interactive-realm/databaseutilities": "^1.2.0",
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.6",
     "react-dom": "^18.3.1",
-    "react-google-charts": "^5.2.1"
+    "react-google-charts": "^5.2.1",
+    "react-router-dom": "^7.0.2",
+    "vite-plugin-environment": "^1.1.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
