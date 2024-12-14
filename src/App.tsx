@@ -1,7 +1,5 @@
 import { useState,useContext } from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'; 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 import { UserContext } from "@interactive-realm/basepatternutilities";   // BasePatternUtilities Functions Import
 
@@ -13,8 +11,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   let component; // React Render Component
 
   // Used to save data locally in the browser session (Data will disappear when page is refreshed, EG. by pressing F5)
@@ -35,7 +32,7 @@ function App() {
             </UserContext.Provider>}
         />
         {/* Reroute all paths to the main campaign route */}
-        {/* <Route path="/*" element={<Navigate to='/CMS' />} /> */}
+        <Route path="/*" element={<Navigate to='/CMS' />} />
         <Route path="/Login" element={<CMSLoginPage/>} />
         <Route path="/Dashboard" element={<Dashboard/>} />
       </Routes>
