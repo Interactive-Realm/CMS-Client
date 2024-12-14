@@ -1,4 +1,4 @@
-import { useState,useContext } from 'react'
+import { useContext } from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'; 
 
 import { UserContext } from "@interactive-realm/basepatternutilities";   // BasePatternUtilities Functions Import
@@ -11,7 +11,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
-  
+
   let component; // React Render Component
 
   // Used to save data locally in the browser session (Data will disappear when page is refreshed, EG. by pressing F5)
